@@ -1,0 +1,146 @@
+html,
+body {
+    background-color: #fff;
+    margin: 0;
+    height: 100%;
+}
+
+.centro {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.bg-nav {
+    background-color: #76323f;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.dropdown-item,
+.dropdown-menu {
+    background-color: #76323f;
+    border-color: #76323f;
+    color: #fff;
+    border-radius: 0px 0px 0.25rem 0.25rem;
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #000;
+    border-top: 0px;
+}
+
+.font-color:hover {
+    color: lightgray;
+}
+
+.alert-welcome {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 15px 15px 30px 0px #000;
+    height: 100px;
+    font-size: 20px;
+    font-display: center;
+}
+
+.actived {
+    background-color: #fff;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 767px) {
+    .font-navbar {
+        display: none;
+        visibility: hidden;
+    }
+    img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        display: none;
+    }
+    .font-navbar {
+        font-size: 145%;
+    }
+    .font-navbar2 {
+        font-size: 130%;
+    }
+}
+
+
+/* Caixa de texto vibrando */
+
+@-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
